@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.app.wrkoutadvisor.FindWrkoutActivity"
+    tools:showIn="@layout/activity_find_wrkout"
+    tools:ignore="ExtraText">
+
+    <Spinner
+        android:id="@+id/wrkouttype"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="34dp"
+        android:entries="@array/wrkout_types"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/wrkout"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/findwrkout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:text="@string/wrkout"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap" />
+      <!--  android:layout_below="@+id/findwrkout"-->
+        android:layout_alignLeft="@+id/findwrkout"
+        android:layout_alignStart="@+id/findwrkout"
+        android:layout_marginTop="59dp" />
+
+    <Button
+        android:id="@+id/findwrkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Workout!"
+        android:onClick="onClickFindWrkout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+</RelativeLayout>
